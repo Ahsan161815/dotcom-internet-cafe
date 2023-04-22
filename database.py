@@ -592,8 +592,9 @@ class cold_corner:
         conn = sqlite3.connect('cold.db', timeout=60)
         cur = conn.cursor()
         cur.execute('''SELECT qty, totalprice FROM  purchase
-         where name==(?)''',(name,))
+         where name==(?) ORDER BY date DESC''',(name,))
         qt_total_price = cur.fetchone()
+        print(qt_total_price)
         conn.commit()
         conn.close()
         

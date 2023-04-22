@@ -43,7 +43,7 @@ class Pc(Thread, pc_data, customer_debt, restore_pc):
         # tkinter pc rate variable
         #global rate
         self.rate = IntVar()
-        self.rate.set(int(70))
+        self.rate.set(int(100))
 
         self.running = False
         self.__figure_column_row_frame__()

@@ -868,12 +868,12 @@ class Window_stuff(Frame, Window_stuff_functions):
 
         # define text widget where pc-data will be placed
         detail_text1 = scrolledtext.ScrolledText(l_title, width=60, height=20, font=(self.default_font,10,'bold'))
-        detail_text1.grid(row=3, column=1, rowspan=7, padx=10, pady=5)
+        detail_text1.grid(row=3, column=1, rowspan=50, padx=10, pady=5,sticky='NS')
         detail_text1.focus()
         
         # define text widget where income will be placed
         detail_income = scrolledtext.ScrolledText(l_title, width=40, height=20, font=(self.default_font,10,'bold'))
-        detail_income.grid(row=3, column=2, rowspan=7, columnspan=4, padx=10, pady=5, sticky='N')
+        detail_income.grid(row=3, column=2, rowspan=50, columnspan=4, padx=10, pady=5, sticky='NS')
         detail_income.focus()
         
         # define text widget where expances will be placed
